@@ -1,0 +1,23 @@
+<!--
+<ul>
+  <li *ngFor="let image of bulb" > 
+     
+   {{image}}
+
+  </li> 
+ </ul>
+
+ 
+<button (click)='toggleButton()'>{{ btn_name ? 'ON' : 'OFF' }}</button>
+-->
+
+<ul>
+ <li *ngFor="let pic of bulbspath; let i = index " >
+  <img [src]= 'pic'>  
+  <button (click)='toggleButton(i)'>{{ btn_name ? button[i] : button[i] }}</button>
+ </li>
+</ul>
+
+       
+
+  
